@@ -1,0 +1,1 @@
+const String KprimaryImage = 'Assets/2zyYZq8iIl9j91MPipx5fGtXea3 1.png' ;
