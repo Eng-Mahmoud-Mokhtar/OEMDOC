@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import '../../../../../../Core/utiles/Colors.dart';
 
 Widget buildProfileOption(
@@ -9,10 +7,15 @@ Widget buildProfileOption(
       required String imagePath,
       required double screenWidth,
       required double screenHeight,
-      required VoidCallback onTap,
+      required Widget page, // 👈 الصفحة اللي هيروح لها
     }) {
   return GestureDetector(
-    onTap: onTap,
+    onTap: () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => page),
+      );
+    },
     child: Container(
       padding: EdgeInsets.symmetric(
         horizontal: screenWidth * 0.04,

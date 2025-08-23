@@ -2,12 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:device_preview/device_preview.dart';
-import 'package:oemdoc/Feature/Home/presentation/view_model/views/Home.dart';
 import 'package:oemdoc/Feature/Home/presentation/view_model/views/HomeStructure.dart';
-import 'package:oemdoc/Feature/MyShipment/presentation/view_model/views/DetailesOrder.dart';
 import 'package:oemdoc/generated/l10n.dart';
 import 'Core/utiles/LocaleCubit.dart';
-import 'Feature/Splash/presentation/view_model/views/SplashScreen.dart';
 
 void main() {
   runApp(

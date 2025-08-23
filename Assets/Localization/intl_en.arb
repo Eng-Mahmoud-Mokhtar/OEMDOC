@@ -141,5 +141,16 @@
   "coupons": "Coupons",
   "support": "Support",
   "rateApp": "Rate App",
-  "logout": "Logout"
+  "logout": "Logout",
+  "save": "Save",
+  "cancel": "Cancel",
+  "favorite": "Favorite",
+  "noFavorites": "No favorite products",
+  "startAddingFavorites": "Start adding your favorite products to see them here",
+  "country": "Country",
+  "whatsapp": "WhatsApp",
+  "webSite": "Web Site",
+  "faq": "FAQ",
+  "contactUs": "Contact Us"
+
 }

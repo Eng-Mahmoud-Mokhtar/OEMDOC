@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:oemdoc/Feature/SuggerstedForYou/presentation/view_model/views/widgets/ProductCard.dart';
 import '../../../../../../generated/l10n.dart';
+import '../../../../../Core/Widgets/AppBar.dart';
 import '../../../../../Core/utiles/Colors.dart';
-import '../../../../Notification/presentation/view_model/views/Notification.dart';
 import '../Product.dart';
 
 
@@ -70,75 +70,18 @@ class SuggerstedForYou extends StatelessWidget {
     ];
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: SecoundColor,
+      appBar: CustomAppBar(title: S.of(context).ProductDetails),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
-              width: double.infinity,
-              color: const Color(0xFFFFF8F4),
-              padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.04),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  SizedBox(height: screenHeight * 0.04),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Row(
-                        children: [
-                          Container(
-                            width: screenWidth * 0.11,
-                            height: screenWidth * 0.11,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: Colors.white,
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey.withOpacity(0.4),
-                                  spreadRadius: 1,
-                                  blurRadius: 5,
-                                  offset: const Offset(0, 2),
-                                ),
-                              ],
-                            ),
-                            child: Icon(
-                              Icons.person,
-                              size: screenWidth * 0.05,
-                              color: KprimaryText,
-                            ),
-                          ),
-                          SizedBox(width: screenWidth * 0.03),
-                          Text(
-                            S.of(context).HelloMahmoud,
-                            style: TextStyle(
-                              fontSize: screenWidth * 0.04,
-                              fontWeight: FontWeight.bold,
-                              color: Colors.black,
-                            ),
-                          ),
-                        ],
-                      ),
-                      IconButton(
-                        icon: Image.asset(
-                          'Assets/Vector.png',
-                          width: screenWidth * 0.05,
-                          height: screenWidth * 0.05,
-                          color: Colors.black,
-                          fit: BoxFit.contain,
-                        ),
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const NotificationsPage()),
-                          );
-                        },
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: screenHeight * 0.03),
-                  SizedBox(
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(height: screenWidth * 0.04),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.04),
+                  child: SizedBox(
                     height: screenWidth * 0.12,
                     child: DecoratedBox(
                       decoration: BoxDecoration(
@@ -179,9 +122,9 @@ class SuggerstedForYou extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(height: screenHeight * 0.03),
-                ],
-              ),
+                ),
+                SizedBox(height: screenHeight * 0.03),
+              ],
             ),
             SizedBox(height: screenHeight * 0.02),
             Padding(

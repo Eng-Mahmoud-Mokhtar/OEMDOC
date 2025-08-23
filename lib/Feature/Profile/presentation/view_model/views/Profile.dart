@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:oemdoc/Core/utiles/Colors.dart';
-import 'package:oemdoc/Feature/Profile/presentation/view_model/views/widgets/buildLanguage.dart';
+import 'package:oemdoc/Feature/MyShipment/presentation/view_model/views/MyShipmentsPage.dart';
+import 'package:oemdoc/Feature/Profile/presentation/view_model/views/Support.dart';
 import 'package:oemdoc/Feature/Profile/presentation/view_model/views/widgets/buildProfileOption.dart';
 import 'package:oemdoc/Feature/Profile/presentation/view_model/views/widgets/buildRatingOption.dart';
 import 'package:oemdoc/generated/l10n.dart';
-import '../../../../../Core/utiles/LocaleCubit.dart';
+import 'EditProfile.dart';
+import 'Favorite.dart';
+import 'Setting.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -15,14 +17,14 @@ class ProfilePage extends StatelessWidget {
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
 
-    List<Widget> profileItems(BuildContext context, Locale locale) => [
+    List<Widget> profileItems(BuildContext context) => [
       buildProfileOption(
         context,
         label: S.of(context).editProfile,
         imagePath: 'Assets/ثيهف.png',
         screenWidth: screenWidth,
         screenHeight: screenHeight,
-        onTap: () {},
+        page: const EditProfile(),
       ),
       buildProfileOption(
         context,
@@ -30,7 +32,7 @@ class ProfilePage extends StatelessWidget {
         imagePath: 'Assets/sops.png',
         screenWidth: screenWidth,
         screenHeight: screenHeight,
-        onTap: () {},
+        page: const MyShipmentsPage(),
       ),
       buildProfileOption(
         context,
@@ -38,7 +40,7 @@ class ProfilePage extends StatelessWidget {
         imagePath: 'Assets/solar_heart-outline.png',
         screenWidth: screenWidth,
         screenHeight: screenHeight,
-        onTap: () {},
+        page: const Favorite(),
       ),
       buildProfileOption(
         context,
@@ -46,7 +48,7 @@ class ProfilePage extends StatelessWidget {
         imagePath: 'Assets/location.png',
         screenWidth: screenWidth,
         screenHeight: screenHeight,
-        onTap: () {},
+        page: const EditProfile(),
       ),
       buildProfileOption(
         context,
@@ -54,21 +56,48 @@ class ProfilePage extends StatelessWidget {
         imagePath: 'Assets/Property 1=setting.png',
         screenWidth: screenWidth,
         screenHeight: screenHeight,
-        onTap: () {},
+        page: const SettingsPage(),
       ),
-      buildProfileOption(
-        context,
-        label: 'Comfra Community',
-        imagePath: 'Assets/fluent_people-community-32-regular.png',
-        screenWidth: screenWidth,
-        screenHeight: screenHeight,
+      GestureDetector(
         onTap: () {},
-      ),
-      buildLanguageSwapOption(
-        context,
-        locale: locale,
-        screenWidth: screenWidth,
-        screenHeight: screenHeight,
+        child: Container(
+          padding: EdgeInsets.symmetric(
+            horizontal: screenWidth * 0.04,
+            vertical: screenHeight * 0.015,
+          ),
+          decoration: BoxDecoration(
+            color: SecoundColor,
+            borderRadius: BorderRadius.circular(screenWidth * 0.02),
+          ),
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Image.asset(
+                'Assets/tabler_world.png',
+                width: screenWidth * 0.05,
+                height: screenWidth * 0.05,
+                fit: BoxFit.contain,
+              ),
+              SizedBox(width: screenWidth * 0.03),
+              Text(
+                S.of(context).country,
+                style: TextStyle(
+                  fontSize: screenWidth * 0.035,
+                  fontWeight: FontWeight.w500,
+                  color: KprimaryText,
+                ),
+              ),
+              Spacer(),
+              CircleAvatar(
+                radius: screenWidth * 0.03,
+                backgroundImage: AssetImage("Assets/Egypt (EG).png"),
+              ),
+              SizedBox(width: screenWidth * 0.02),
+              Icon(Icons.arrow_forward_ios,
+                  size: screenWidth * 0.045, color: Colors.black),
+            ],
+          ),
+        ),
       ),
       buildProfileOption(
         context,
@@ -76,7 +105,7 @@ class ProfilePage extends StatelessWidget {
         imagePath: 'Assets/mdi_coupon-outline.png',
         screenWidth: screenWidth,
         screenHeight: screenHeight,
-        onTap: () {},
+        page: const EditProfile(),
       ),
       buildProfileOption(
         context,
@@ -84,7 +113,7 @@ class ProfilePage extends StatelessWidget {
         imagePath: 'Assets/streamline-plump_customer-support-3.png',
         screenWidth: screenWidth,
         screenHeight: screenHeight,
-        onTap: () {},
+        page: const Support(),
       ),
       buildRatingOption(
         label: S.of(context).rateApp,
@@ -100,7 +129,7 @@ class ProfilePage extends StatelessWidget {
         imagePath: 'Assets/log-out.png',
         screenWidth: screenWidth,
         screenHeight: screenHeight,
-        onTap: () {},
+        page: const EditProfile(),
       ),
     ];
 
@@ -122,34 +151,24 @@ class ProfilePage extends StatelessWidget {
       ),
       body: Padding(
         padding: EdgeInsets.all(screenWidth * 0.04),
-        child: BlocBuilder<LocaleCubit, Locale>(
-          builder: (context, locale) {
-            final TextDirection textDirection =
-            (locale.languageCode == 'ar') ? TextDirection.rtl : TextDirection.ltr;
-            final items = profileItems(context, locale);
-
-            return Directionality(
-              textDirection: textDirection,
-              child: Container(
-                padding: EdgeInsets.all(screenWidth * 0.03),
-                decoration: BoxDecoration(
-                  color: SecoundColor,
-                  borderRadius: BorderRadius.circular(screenWidth * 0.03),
-                ),
-                child: ListView.separated(
-                  itemCount: items.length,
-                  separatorBuilder: (_, __) => Divider(
-                    color: Colors.grey.shade100,
-                    thickness: 1,
-                    height: screenHeight * 0.01,
-                  ),
-                  itemBuilder: (context, index) => items[index],
-                ),
-              ),
-            );
-          },
+        child: Container(
+          padding: EdgeInsets.all(screenWidth * 0.03),
+          decoration: BoxDecoration(
+            color: SecoundColor,
+            borderRadius: BorderRadius.circular(screenWidth * 0.03),
+          ),
+          child: ListView.separated(
+            itemCount: profileItems(context).length,
+            separatorBuilder: (_, __) => Divider(
+              color: Colors.grey.shade100,
+              thickness: 1,
+              height: screenHeight * 0.01,
+            ),
+            itemBuilder: (context, index) => profileItems(context)[index],
+          ),
         ),
       ),
     );
   }
 }
+

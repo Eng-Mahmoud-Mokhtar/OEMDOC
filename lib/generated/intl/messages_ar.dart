@@ -154,6 +154,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "تصفح المنتجات وقم بالشراء الآن",
     ),
     "browseProducts": MessageLookupByLibrary.simpleMessage("تصفح المنتجات"),
+    "cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
     "cancelledShipments": MessageLookupByLibrary.simpleMessage("ملغية"),
     "cart": MessageLookupByLibrary.simpleMessage("السلة"),
     "cash": MessageLookupByLibrary.simpleMessage("نقدًا"),
@@ -161,7 +162,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "completePurchase": MessageLookupByLibrary.simpleMessage("إتمام الشراء"),
     "completedShipments": MessageLookupByLibrary.simpleMessage("مكتملة"),
     "completionTime": MessageLookupByLibrary.simpleMessage("وقت الاكتمال"),
+    "contactUs": MessageLookupByLibrary.simpleMessage("تواصل معنا"),
     "copy": MessageLookupByLibrary.simpleMessage("نسخ"),
+    "country": MessageLookupByLibrary.simpleMessage("البلد"),
     "coupons": MessageLookupByLibrary.simpleMessage("الكوبونات"),
     "currentShipments": MessageLookupByLibrary.simpleMessage("حالية"),
     "day": MessageLookupByLibrary.simpleMessage("يوم"),
@@ -180,6 +183,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "expectedDelivery": MessageLookupByLibrary.simpleMessage(
       "من المتوقع الوصول خلال",
     ),
+    "faq": MessageLookupByLibrary.simpleMessage("الأسئلة الشائعة"),
+    "favorite": MessageLookupByLibrary.simpleMessage("المفضلة"),
     "favoriteProducts": MessageLookupByLibrary.simpleMessage(
       "المنتجات المفضلة",
     ),
@@ -190,6 +195,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "logout": MessageLookupByLibrary.simpleMessage("الخروج من التطبيق"),
     "model": MessageLookupByLibrary.simpleMessage("الموديل"),
     "myShipments": MessageLookupByLibrary.simpleMessage("شحناتي"),
+    "noFavorites": MessageLookupByLibrary.simpleMessage("لا توجد منتجات مفضلة"),
     "noNotifications": MessageLookupByLibrary.simpleMessage(
       "ليس لديك إشعارات بعد",
     ),
@@ -214,16 +220,22 @@ class MessageLookup extends MessageLookupByLibrary {
     "safetyLabelNote": MessageLookupByLibrary.simpleMessage(
       "يرجى التأكد من أن ملصق الأمان لم يمس.",
     ),
+    "save": MessageLookupByLibrary.simpleMessage("حفظ"),
     "searchByPart": MessageLookupByLibrary.simpleMessage(
       "ابحث باسم القطعة أو رقمها",
     ),
     "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
     "shipment": MessageLookupByLibrary.simpleMessage("شحنة"),
     "shippingTime": MessageLookupByLibrary.simpleMessage("وقت الشحن"),
+    "startAddingFavorites": MessageLookupByLibrary.simpleMessage(
+      "ابدأ بإضافة منتجاتك المفضلة لتظهر هنا",
+    ),
     "subtotal": MessageLookupByLibrary.simpleMessage("سعر المنتجات"),
     "support": MessageLookupByLibrary.simpleMessage("الدعم الفني"),
     "total": MessageLookupByLibrary.simpleMessage("الإجمالي"),
     "visa": MessageLookupByLibrary.simpleMessage("فيزا"),
+    "webSite": MessageLookupByLibrary.simpleMessage("الموقع الإلكتروني"),
+    "whatsapp": MessageLookupByLibrary.simpleMessage("واتساب"),
     "years": MessageLookupByLibrary.simpleMessage("سنوات"),
   };
 }

@@ -43,6 +43,7 @@ dependencies:
   flutter_bloc:
   shared_preferences:
   dropdown_button2:
+  url_launcher:
 flutter_launcher_icons:
   adaptive_icon_background: "#FFFFFF"
   android: true

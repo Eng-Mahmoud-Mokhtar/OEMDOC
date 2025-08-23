@@ -55,7 +55,7 @@ class Name extends StatelessWidget {
               suffixIcon: Padding(
               padding: EdgeInsets.all( screenWidth * 0.04),
               child: Image.asset(
-              'Assets/username.png',
+              'Assets/user.png',
               width: screenWidth * 0.05,
               height: screenWidth * 0.05,
                 color:Colors.grey.shade800,

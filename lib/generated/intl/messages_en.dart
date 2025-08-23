@@ -160,6 +160,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Browse products and shop now",
     ),
     "browseProducts": MessageLookupByLibrary.simpleMessage("Browse Products"),
+    "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
     "cancelledShipments": MessageLookupByLibrary.simpleMessage("Cancelled"),
     "cart": MessageLookupByLibrary.simpleMessage("Cart"),
     "cash": MessageLookupByLibrary.simpleMessage("Cash"),
@@ -169,7 +170,9 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "completedShipments": MessageLookupByLibrary.simpleMessage("Completed"),
     "completionTime": MessageLookupByLibrary.simpleMessage("Completion Time"),
+    "contactUs": MessageLookupByLibrary.simpleMessage("Contact Us"),
     "copy": MessageLookupByLibrary.simpleMessage("Copy"),
+    "country": MessageLookupByLibrary.simpleMessage("Country"),
     "coupons": MessageLookupByLibrary.simpleMessage("Coupons"),
     "currentShipments": MessageLookupByLibrary.simpleMessage("Current"),
     "day": MessageLookupByLibrary.simpleMessage("day"),
@@ -190,6 +193,8 @@ class MessageLookup extends MessageLookupByLibrary {
     "expectedDelivery": MessageLookupByLibrary.simpleMessage(
       "Expected to arrive within",
     ),
+    "faq": MessageLookupByLibrary.simpleMessage("FAQ"),
+    "favorite": MessageLookupByLibrary.simpleMessage("Favorite"),
     "favoriteProducts": MessageLookupByLibrary.simpleMessage(
       "Favorite Products",
     ),
@@ -200,6 +205,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "logout": MessageLookupByLibrary.simpleMessage("Logout"),
     "model": MessageLookupByLibrary.simpleMessage("Model"),
     "myShipments": MessageLookupByLibrary.simpleMessage("My Shipments"),
+    "noFavorites": MessageLookupByLibrary.simpleMessage("No favorite products"),
     "noNotifications": MessageLookupByLibrary.simpleMessage(
       "You have no notifications yet",
     ),
@@ -224,16 +230,22 @@ class MessageLookup extends MessageLookupByLibrary {
     "safetyLabelNote": MessageLookupByLibrary.simpleMessage(
       "Please make sure the security seal has not been tampered with.",
     ),
+    "save": MessageLookupByLibrary.simpleMessage("Save"),
     "searchByPart": MessageLookupByLibrary.simpleMessage(
       "Search by part name or number",
     ),
     "settings": MessageLookupByLibrary.simpleMessage("Settings"),
     "shipment": MessageLookupByLibrary.simpleMessage("Shipment"),
     "shippingTime": MessageLookupByLibrary.simpleMessage("Shipping Time"),
+    "startAddingFavorites": MessageLookupByLibrary.simpleMessage(
+      "Start adding your favorite products to see them here",
+    ),
     "subtotal": MessageLookupByLibrary.simpleMessage("Subtotal"),
     "support": MessageLookupByLibrary.simpleMessage("Support"),
     "total": MessageLookupByLibrary.simpleMessage("Total"),
     "visa": MessageLookupByLibrary.simpleMessage("Visa"),
+    "webSite": MessageLookupByLibrary.simpleMessage("Web Site"),
+    "whatsapp": MessageLookupByLibrary.simpleMessage("WhatsApp"),
     "years": MessageLookupByLibrary.simpleMessage("Years"),
   };
 }
