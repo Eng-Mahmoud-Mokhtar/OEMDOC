@@ -182,7 +182,7 @@ class ProductFav extends StatelessWidget {
                     child: IconButton(
                       icon: Icon(
                         Icons.favorite,
-                        color: Colors.red,
+                        color: ThirdColor,
                         size: screenWidth * 0.07,
                       ),
                       onPressed: onRemove,

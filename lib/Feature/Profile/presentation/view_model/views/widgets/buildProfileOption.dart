@@ -7,7 +7,7 @@ Widget buildProfileOption(
       required String imagePath,
       required double screenWidth,
       required double screenHeight,
-      required Widget page, // 👈 الصفحة اللي هيروح لها
+      required Widget page,
     }) {
   return GestureDetector(
     onTap: () {

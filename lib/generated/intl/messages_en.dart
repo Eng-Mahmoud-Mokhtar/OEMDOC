@@ -79,6 +79,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "MyShipments": MessageLookupByLibrary.simpleMessage("My shipments"),
     "Next": MessageLookupByLibrary.simpleMessage("Next"),
     "NotAMember": MessageLookupByLibrary.simpleMessage("Not a member?"),
+    "Number": MessageLookupByLibrary.simpleMessage("Number"),
     "NumberOfResults": MessageLookupByLibrary.simpleMessage(
       "Number of results: 10",
     ),
@@ -152,19 +153,31 @@ class MessageLookup extends MessageLookupByLibrary {
       "Verify Phone Number",
     ),
     "addAddress": MessageLookupByLibrary.simpleMessage("Add Address"),
+    "addAddressesInfo": MessageLookupByLibrary.simpleMessage(
+      "Add your addresses and choose anytime",
+    ),
     "addCoupon": MessageLookupByLibrary.simpleMessage("Add Coupon"),
+    "addHashtag": MessageLookupByLibrary.simpleMessage("Add Hashtag"),
+    "add_new_post": MessageLookupByLibrary.simpleMessage("Add New Post"),
     "addresses": MessageLookupByLibrary.simpleMessage("Addresses"),
     "applyDiscount": MessageLookupByLibrary.simpleMessage("Apply Discount"),
+    "askAnything": MessageLookupByLibrary.simpleMessage("Ask anything"),
+    "assistantTitle": MessageLookupByLibrary.simpleMessage(
+      "Personal Assistant",
+    ),
     "brand": MessageLookupByLibrary.simpleMessage("Brand"),
     "browseAndShopNow": MessageLookupByLibrary.simpleMessage(
       "Browse products and shop now",
     ),
     "browseProducts": MessageLookupByLibrary.simpleMessage("Browse Products"),
+    "buildingNumber": MessageLookupByLibrary.simpleMessage("Building"),
     "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
     "cancelledShipments": MessageLookupByLibrary.simpleMessage("Cancelled"),
     "cart": MessageLookupByLibrary.simpleMessage("Cart"),
     "cash": MessageLookupByLibrary.simpleMessage("Cash"),
+    "city": MessageLookupByLibrary.simpleMessage("City"),
     "comfraCommunity": MessageLookupByLibrary.simpleMessage("Comfra Community"),
+    "community": MessageLookupByLibrary.simpleMessage("Community"),
     "completePurchase": MessageLookupByLibrary.simpleMessage(
       "Complete Purchase",
     ),
@@ -180,10 +193,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "deliveredAt": MessageLookupByLibrary.simpleMessage("Delivered at"),
     "deliveryFailed": MessageLookupByLibrary.simpleMessage("Delivery failed"),
     "deliveryTo": MessageLookupByLibrary.simpleMessage("Delivery To"),
+    "description": MessageLookupByLibrary.simpleMessage("Description"),
     "discount": MessageLookupByLibrary.simpleMessage("Discount"),
+    "edit": MessageLookupByLibrary.simpleMessage("edit"),
     "editProfile": MessageLookupByLibrary.simpleMessage("Edit Profile"),
     "emptyCart": MessageLookupByLibrary.simpleMessage("Your cart is empty!"),
     "engine": MessageLookupByLibrary.simpleMessage("Engine"),
+    "enterCity": MessageLookupByLibrary.simpleMessage("Enter city name"),
     "enterCouponCode": MessageLookupByLibrary.simpleMessage(
       "Enter Coupon Code",
     ),
@@ -193,10 +209,18 @@ class MessageLookup extends MessageLookupByLibrary {
     "expectedDelivery": MessageLookupByLibrary.simpleMessage(
       "Expected to arrive within",
     ),
-    "faq": MessageLookupByLibrary.simpleMessage("FAQ"),
     "favorite": MessageLookupByLibrary.simpleMessage("Favorite"),
     "favoriteProducts": MessageLookupByLibrary.simpleMessage(
       "Favorite Products",
+    ),
+    "flatNumber": MessageLookupByLibrary.simpleMessage("Flat"),
+    "floorNumber": MessageLookupByLibrary.simpleMessage("Floor"),
+    "home": MessageLookupByLibrary.simpleMessage("Home"),
+    "howCanIHelp": MessageLookupByLibrary.simpleMessage(
+      "How can I help you today?",
+    ),
+    "instructions": MessageLookupByLibrary.simpleMessage(
+      "Tell me how your car sounds or take a picture of the problem, and I will help you identify the issue and suggest the suitable parts according to your car type.",
     ),
     "item": MessageLookupByLibrary.simpleMessage("Item"),
     "itemsInOrder": MessageLookupByLibrary.simpleMessage("Items in the order"),
@@ -208,6 +232,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "noFavorites": MessageLookupByLibrary.simpleMessage("No favorite products"),
     "noNotifications": MessageLookupByLibrary.simpleMessage(
       "You have no notifications yet",
+    ),
+    "noSavedAddresses": MessageLookupByLibrary.simpleMessage(
+      "You have no saved addresses",
     ),
     "notificationsTitle": MessageLookupByLibrary.simpleMessage("Notifications"),
     "onTheWay": MessageLookupByLibrary.simpleMessage("Order On The Way"),
@@ -224,6 +251,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Preparing for shipping",
     ),
     "profile": MessageLookupByLibrary.simpleMessage("profile"),
+    "publish": MessageLookupByLibrary.simpleMessage("Publish"),
     "rateApp": MessageLookupByLibrary.simpleMessage("Rate App"),
     "received": MessageLookupByLibrary.simpleMessage("Order Received"),
     "reorder": MessageLookupByLibrary.simpleMessage("Reorder"),
@@ -231,21 +259,33 @@ class MessageLookup extends MessageLookupByLibrary {
       "Please make sure the security seal has not been tampered with.",
     ),
     "save": MessageLookupByLibrary.simpleMessage("Save"),
+    "saveAddress": MessageLookupByLibrary.simpleMessage("Save Address"),
     "searchByPart": MessageLookupByLibrary.simpleMessage(
       "Search by part name or number",
     ),
+    "searchHint": MessageLookupByLibrary.simpleMessage("Search for any topic"),
     "settings": MessageLookupByLibrary.simpleMessage("Settings"),
     "shipment": MessageLookupByLibrary.simpleMessage("Shipment"),
     "shippingTime": MessageLookupByLibrary.simpleMessage("Shipping Time"),
     "startAddingFavorites": MessageLookupByLibrary.simpleMessage(
       "Start adding your favorite products to see them here",
     ),
+    "startChat": MessageLookupByLibrary.simpleMessage("Start Chat"),
+    "street": MessageLookupByLibrary.simpleMessage("Street Name"),
     "subtotal": MessageLookupByLibrary.simpleMessage("Subtotal"),
     "support": MessageLookupByLibrary.simpleMessage("Support"),
     "total": MessageLookupByLibrary.simpleMessage("Total"),
+    "trendingTopics": MessageLookupByLibrary.simpleMessage("Trending Topics"),
     "visa": MessageLookupByLibrary.simpleMessage("Visa"),
     "webSite": MessageLookupByLibrary.simpleMessage("Web Site"),
+    "welcomeMessage": MessageLookupByLibrary.simpleMessage(
+      "Hello! Let\'s determine the problem together: what is the car type, year, and what issue are you facing?",
+    ),
+    "whatOnYourMind": MessageLookupByLibrary.simpleMessage(
+      "What\'s on your mind?",
+    ),
     "whatsapp": MessageLookupByLibrary.simpleMessage("WhatsApp"),
+    "work": MessageLookupByLibrary.simpleMessage("Work"),
     "years": MessageLookupByLibrary.simpleMessage("Years"),
   };
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:oemdoc/Feature/Home/presentation/view_model/views/PersonalAssistant.dart';
 import '../../../../../../Core/utiles/Colors.dart';
 import '../../../../../../generated/l10n.dart';
 import '../../../../../MyShipment/presentation/view_model/views/MyShipmentsPage.dart';
@@ -20,7 +21,9 @@ class SectionService extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const MyShipmentsPage()),
+                MaterialPageRoute(
+                  builder: (context) => const MyShipmentsPage(),
+                ),
               );
             },
             child: Container(
@@ -67,45 +70,55 @@ class SectionService extends StatelessWidget {
 
         SizedBox(width: screenWidth * 0.04),
 
-        /// 🔵 كونتينر المساعد الشخصي (لسه بدون حركة)
         Expanded(
-          child: Container(
-            padding: EdgeInsets.all(screenWidth * 0.02),
-            decoration: BoxDecoration(
-              border: Border.all(color: const Color(0xff747474)),
-              borderRadius: BorderRadius.circular(8),
-            ),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Image.asset(
-                  'Assets/Group.png',
-                  width: screenWidth * 0.07,
-                  height: screenWidth * 0.07,
-                  fit: BoxFit.contain,
+          child: InkWell(
+            borderRadius: BorderRadius.circular(8),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const PersonalAssistant(),
                 ),
-                SizedBox(height: screenHeight * 0.01),
-                Text(
-                  S.of(context).PersonalAssistant,
-                  style: TextStyle(
-                    fontSize: screenWidth * 0.03,
-                    fontWeight: FontWeight.w500,
-                    color: KprimaryText,
+              );
+            },
+            child: Container(
+              padding: EdgeInsets.all(screenWidth * 0.02),
+              decoration: BoxDecoration(
+                border: Border.all(color: const Color(0xff747474)),
+                borderRadius: BorderRadius.circular(8),
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Image.asset(
+                    'Assets/Group.png',
+                    width: screenWidth * 0.07,
+                    height: screenWidth * 0.07,
+                    fit: BoxFit.contain,
                   ),
-                ),
-                SizedBox(height: screenHeight * 0.005),
-                Text(
-                  S.of(context).SearchWithAI,
-                  style: TextStyle(
-                    fontSize: screenWidth * 0.025,
-                    fontWeight: FontWeight.w400,
-                    color: SecoundText,
+                  SizedBox(height: screenHeight * 0.01),
+                  Text(
+                    S.of(context).PersonalAssistant,
+                    style: TextStyle(
+                      fontSize: screenWidth * 0.03,
+                      fontWeight: FontWeight.w500,
+                      color: KprimaryText,
+                    ),
                   ),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                ),
-              ],
+                  SizedBox(height: screenHeight * 0.005),
+                  Text(
+                    S.of(context).SearchWithAI,
+                    style: TextStyle(
+                      fontSize: screenWidth * 0.025,
+                      fontWeight: FontWeight.w400,
+                      color: SecoundText,
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ],
+              ),
             ),
           ),
         ),

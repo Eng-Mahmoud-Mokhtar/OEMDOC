@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:oemdoc/Core/utiles/Colors.dart';
+import 'package:oemdoc/Feature/Auth/presentation/view_model/views/login.dart';
 import 'package:oemdoc/Feature/MyShipment/presentation/view_model/views/MyShipmentsPage.dart';
+import 'package:oemdoc/Feature/Profile/presentation/view_model/views/Conforma.dart';
 import 'package:oemdoc/Feature/Profile/presentation/view_model/views/Support.dart';
 import 'package:oemdoc/Feature/Profile/presentation/view_model/views/widgets/buildProfileOption.dart';
 import 'package:oemdoc/Feature/Profile/presentation/view_model/views/widgets/buildRatingOption.dart';
@@ -8,6 +10,7 @@ import 'package:oemdoc/generated/l10n.dart';
 import 'EditProfile.dart';
 import 'Favorite.dart';
 import 'Setting.dart';
+import 'addresses.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -48,7 +51,7 @@ class ProfilePage extends StatelessWidget {
         imagePath: 'Assets/location.png',
         screenWidth: screenWidth,
         screenHeight: screenHeight,
-        page: const EditProfile(),
+        page: const Addresses(),
       ),
       buildProfileOption(
         context,
@@ -57,6 +60,14 @@ class ProfilePage extends StatelessWidget {
         screenWidth: screenWidth,
         screenHeight: screenHeight,
         page: const SettingsPage(),
+      ),
+      buildProfileOption(
+        context,
+        label: S.of(context).comfraCommunity,
+        imagePath: 'Assets/fluent_people-community-32-regular.png',
+        screenWidth: screenWidth,
+        screenHeight: screenHeight,
+        page: const Conforma(),
       ),
       GestureDetector(
         onTap: () {},
@@ -129,7 +140,7 @@ class ProfilePage extends StatelessWidget {
         imagePath: 'Assets/log-out.png',
         screenWidth: screenWidth,
         screenHeight: screenHeight,
-        page: const EditProfile(),
+        page: Login(),
       ),
     ];
 

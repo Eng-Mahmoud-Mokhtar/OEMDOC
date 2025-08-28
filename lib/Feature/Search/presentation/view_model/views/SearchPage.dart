@@ -67,7 +67,6 @@ class _SearchPageState extends State<SearchPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // -------------------- الهيدر --------------------
             Container(
               width: double.infinity,
               color: const Color(0xFFFFF8F4),
@@ -76,7 +75,6 @@ class _SearchPageState extends State<SearchPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   SizedBox(height: screenHeight * 0.04),
-                  // -------------------- Search Field --------------------
                   SizedBox(
                     height: screenWidth * 0.12,
                     child: DecoratedBox(
@@ -130,7 +128,6 @@ class _SearchPageState extends State<SearchPage> {
                     ),
                   ),
                   SizedBox(height: screenHeight * 0.03),
-                  // -------------------- Filters --------------------
                   if (showFilters)
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -186,7 +183,6 @@ class _SearchPageState extends State<SearchPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  // -------------------- العنوان --------------------
                   if (showFilters)
                     Text(
                       S.of(context).PreviousSearches,
@@ -237,7 +233,6 @@ class _SearchPageState extends State<SearchPage> {
                                   ),
                                 ),
                               ),
-                              // هذا هو الـ Padding بين كل Container
                               if (i != previousSearches.take(4).length - 1)
                                 SizedBox(width: screenWidth * 0.02),
                             ],

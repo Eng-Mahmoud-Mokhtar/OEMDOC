@@ -6,7 +6,7 @@ import '../../../../Profile/presentation/view_model/views/Profile.dart';
 import '../../../../Search/presentation/view_model/views/SearchPage.dart';
 import '../../../../cart/presentation/view_model/views/Cart.dart';
 import 'Home.dart';
-import 'SubPages.dart';
+import 'PersonalAssistant.dart';
 
 class HomeStructure extends StatefulWidget {
   const HomeStructure({super.key});
@@ -26,7 +26,6 @@ class _HomeStructureState extends State<HomeStructure> {
     _pages.addAll([
       const HomePage(),
       const SearchPage(),
-      const ActionPage(),
       Cart(onNavigateToSearch: () {
         setState(() {
           _selectedIndex = 1;
@@ -39,7 +38,6 @@ class _HomeStructureState extends State<HomeStructure> {
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
-
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: IndexedStack(
@@ -48,9 +46,10 @@ class _HomeStructureState extends State<HomeStructure> {
       ),
       floatingActionButton: GestureDetector(
         onTap: () {
-          setState(() {
-            _selectedIndex = 2;
-          });
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const PersonalAssistant()),
+          );
         },
         child: Container(
           width: screenWidth * 0.13,
@@ -109,14 +108,14 @@ class _HomeStructureState extends State<HomeStructure> {
                   image: "Assets/bag.png",
                   selectedImage: "Assets/cart2.png",
                   label: S.of(context).Cart,
-                  index: 3,
+                  index: 2, // هنا عدلنا الـ index عشان يتوافق مع _pages
                   screenWidth: screenWidth,
                 ),
                 _buildNavItem(
                   image: "Assets/user.png",
                   selectedImage: "Assets/user2.png",
                   label: S.of(context).profile,
-                  index: 4,
+                  index: 3,
                   screenWidth: screenWidth,
                 ),
               ],

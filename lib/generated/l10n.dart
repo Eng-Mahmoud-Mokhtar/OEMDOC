@@ -1194,14 +1194,209 @@ class S {
     return Intl.message('Web Site', name: 'webSite', desc: '', args: []);
   }
 
-  /// `FAQ`
-  String get faq {
-    return Intl.message('FAQ', name: 'faq', desc: '', args: []);
-  }
-
   /// `Contact Us`
   String get contactUs {
     return Intl.message('Contact Us', name: 'contactUs', desc: '', args: []);
+  }
+
+  /// `Add New Post`
+  String get add_new_post {
+    return Intl.message(
+      'Add New Post',
+      name: 'add_new_post',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `What's on your mind?`
+  String get whatOnYourMind {
+    return Intl.message(
+      'What\'s on your mind?',
+      name: 'whatOnYourMind',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add Hashtag`
+  String get addHashtag {
+    return Intl.message('Add Hashtag', name: 'addHashtag', desc: '', args: []);
+  }
+
+  /// `Publish`
+  String get publish {
+    return Intl.message('Publish', name: 'publish', desc: '', args: []);
+  }
+
+  /// `Trending Topics`
+  String get trendingTopics {
+    return Intl.message(
+      'Trending Topics',
+      name: 'trendingTopics',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search for any topic`
+  String get searchHint {
+    return Intl.message(
+      'Search for any topic',
+      name: 'searchHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Community`
+  String get community {
+    return Intl.message('Community', name: 'community', desc: '', args: []);
+  }
+
+  /// `edit`
+  String get edit {
+    return Intl.message('edit', name: 'edit', desc: '', args: []);
+  }
+
+  /// `Home`
+  String get home {
+    return Intl.message('Home', name: 'home', desc: '', args: []);
+  }
+
+  /// `Work`
+  String get work {
+    return Intl.message('Work', name: 'work', desc: '', args: []);
+  }
+
+  /// `City`
+  String get city {
+    return Intl.message('City', name: 'city', desc: '', args: []);
+  }
+
+  /// `Enter city name`
+  String get enterCity {
+    return Intl.message(
+      'Enter city name',
+      name: 'enterCity',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Street Name`
+  String get street {
+    return Intl.message('Street Name', name: 'street', desc: '', args: []);
+  }
+
+  /// `Building`
+  String get buildingNumber {
+    return Intl.message('Building', name: 'buildingNumber', desc: '', args: []);
+  }
+
+  /// `Floor`
+  String get floorNumber {
+    return Intl.message('Floor', name: 'floorNumber', desc: '', args: []);
+  }
+
+  /// `Flat`
+  String get flatNumber {
+    return Intl.message('Flat', name: 'flatNumber', desc: '', args: []);
+  }
+
+  /// `Description`
+  String get description {
+    return Intl.message('Description', name: 'description', desc: '', args: []);
+  }
+
+  /// `Save Address`
+  String get saveAddress {
+    return Intl.message(
+      'Save Address',
+      name: 'saveAddress',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Number`
+  String get Number {
+    return Intl.message('Number', name: 'Number', desc: '', args: []);
+  }
+
+  /// `You have no saved addresses`
+  String get noSavedAddresses {
+    return Intl.message(
+      'You have no saved addresses',
+      name: 'noSavedAddresses',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add your addresses and choose anytime`
+  String get addAddressesInfo {
+    return Intl.message(
+      'Add your addresses and choose anytime',
+      name: 'addAddressesInfo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hello! Let's determine the problem together: what is the car type, year, and what issue are you facing?`
+  String get welcomeMessage {
+    return Intl.message(
+      'Hello! Let\'s determine the problem together: what is the car type, year, and what issue are you facing?',
+      name: 'welcomeMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Personal Assistant`
+  String get assistantTitle {
+    return Intl.message(
+      'Personal Assistant',
+      name: 'assistantTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Start Chat`
+  String get startChat {
+    return Intl.message('Start Chat', name: 'startChat', desc: '', args: []);
+  }
+
+  /// `How can I help you today?`
+  String get howCanIHelp {
+    return Intl.message(
+      'How can I help you today?',
+      name: 'howCanIHelp',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tell me how your car sounds or take a picture of the problem, and I will help you identify the issue and suggest the suitable parts according to your car type.`
+  String get instructions {
+    return Intl.message(
+      'Tell me how your car sounds or take a picture of the problem, and I will help you identify the issue and suggest the suitable parts according to your car type.',
+      name: 'instructions',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Ask anything`
+  String get askAnything {
+    return Intl.message(
+      'Ask anything',
+      name: 'askAnything',
+      desc: '',
+      args: [],
+    );
   }
 }
 
