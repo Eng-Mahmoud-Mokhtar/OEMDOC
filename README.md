@@ -1,16 +1,28 @@
-# oemdoc
+# OEMDOC
 
-A new Flutter project.
+تطبيق قطع غيار السيارات
 
-## Getting Started
+تطبيق ذكي وسهل الاستخدام يساعد العملاء على إيجاد قطع الغيار المناسبة لسيارتهم بكل سهولة، عبر تحديد نوع السيارة والموديل، مع مزايا متكاملة للتسوق والدفع والتوصيل.
 
-This project is a starting point for a Flutter application.
+المميزات الرئيسية:
 
-A few resources to get you started if this is your first Flutter project:
+واجهة رئيسية: عرض الفئات والعروض والمنتجات الأكثر مبيعًا.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+بحث ذكي: بالاسم، بالكود .
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+اختيار السيارة: تحديد النوع والموديل وسنة الصنع لعرض القطع المتوافقة.
+
+تفاصيل المنتج: صور عالية الجودة، مواصفات كاملة، تقييمات العملاء.
+
+سلة مشتريات: إضافة وتعديل المنتجات مع حساب الإجمالي.
+
+طرق الدفع: دفع إلكتروني آمن أو عند الاستلام.
+
+التوصيل: شحن سريع مع متابعة حالة الطلب.
+
+الحساب الشخصي: بيانات المستخدم، سجل الطلبات، التوصيات.
+
+خدمات إضافية: إشعارات بالعروض، دعم فني مباشر، مفضلة.
+
+
+<img width="1500" height="1125" alt="iPhone 13 Pro (1)" src="https://github.com/user-attachments/assets/4ba2bd6b-e297-4bcc-ac81-c0694fc94dce" />
