@@ -19,9 +19,7 @@ class _DetailesOrderState extends State<DetailesOrder> {
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: SecoundColor,
-      appBar:  CustomAppBar(
-        title: S.of(context).orderDetails,
-      ),
+      appBar: CustomAppBar(title: S.of(context).orderDetails),
       body: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.symmetric(horizontal: screenWidth * 0.04),
@@ -141,7 +139,6 @@ class _DetailesOrderState extends State<DetailesOrder> {
                       size: screenWidth * 0.05,
                     ),
                   ),
-
                 ],
               ),
               Divider(color: Colors.grey.shade200, thickness: 1),
@@ -188,10 +185,13 @@ class _DetailesOrderState extends State<DetailesOrder> {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("زيت محرك موبيل",
-                            style: TextStyle(
-                                fontSize: screenWidth * 0.035,
-                                fontWeight: FontWeight.bold)),
+                        Text(
+                          "زيت محرك موبيل",
+                          style: TextStyle(
+                            fontSize: screenWidth * 0.035,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
                         SizedBox(height: screenWidth * 0.015),
                         Row(
                           children: [
@@ -225,9 +225,10 @@ class _DetailesOrderState extends State<DetailesOrder> {
                             Text(
                               "60 ${S.of(context).SYP}",
                               style: TextStyle(
-                                  fontSize: screenWidth * 0.03,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.black),
+                                fontSize: screenWidth * 0.03,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black,
+                              ),
                             ),
                           ],
                         ),
@@ -263,7 +264,6 @@ class _DetailesOrderState extends State<DetailesOrder> {
                       ),
                     ),
                   ),
-
                 ],
               ),
               Divider(color: Colors.grey.shade200, thickness: 1),
@@ -275,14 +275,21 @@ class _DetailesOrderState extends State<DetailesOrder> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(S.of(context).OrderNumber,
-                            style: TextStyle(fontSize: screenWidth * 0.03, color: Colors.black54)),
+                        Text(
+                          S.of(context).OrderNumber,
+                          style: TextStyle(
+                            fontSize: screenWidth * 0.03,
+                            color: Colors.black54,
+                          ),
+                        ),
                         Row(
                           children: [
                             Text(
                               "M2Z4-VVY2",
                               style: TextStyle(
-                                  fontSize: screenWidth * 0.03, color: Colors.black),
+                                fontSize: screenWidth * 0.03,
+                                color: Colors.black,
+                              ),
                             ),
                             SizedBox(width: screenWidth * 0.02),
                             GestureDetector(
@@ -290,8 +297,9 @@ class _DetailesOrderState extends State<DetailesOrder> {
                               child: Text(
                                 S.of(context).copy,
                                 style: TextStyle(
-                                    fontSize: screenWidth * 0.03,
-                                    color: KprimaryColor),
+                                  fontSize: screenWidth * 0.03,
+                                  color: KprimaryColor,
+                                ),
                               ),
                             ),
                           ],
@@ -302,49 +310,91 @@ class _DetailesOrderState extends State<DetailesOrder> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(S.of(context).paymentTime,
-                            style: TextStyle(fontSize: screenWidth * 0.03, color: Colors.black54)),
-                        Text("16.07.2022، 19:47",
-                            style: TextStyle(fontSize: screenWidth * 0.03, color: Colors.black54)),
+                        Text(
+                          S.of(context).paymentTime,
+                          style: TextStyle(
+                            fontSize: screenWidth * 0.03,
+                            color: Colors.black54,
+                          ),
+                        ),
+                        Text(
+                          "16.07.2022، 19:47",
+                          style: TextStyle(
+                            fontSize: screenWidth * 0.03,
+                            color: Colors.black54,
+                          ),
+                        ),
                       ],
                     ),
                     SizedBox(height: screenWidth * 0.03),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(S.of(context).orderTime,
-                            style: TextStyle(fontSize: screenWidth * 0.03, color: Colors.black54)),
-                        Text("16.07.2022، 20:47",
-                            style: TextStyle(fontSize: screenWidth * 0.03, color: Colors.black54)),
+                        Text(
+                          S.of(context).orderTime,
+                          style: TextStyle(
+                            fontSize: screenWidth * 0.03,
+                            color: Colors.black54,
+                          ),
+                        ),
+                        Text(
+                          "16.07.2022، 20:47",
+                          style: TextStyle(
+                            fontSize: screenWidth * 0.03,
+                            color: Colors.black54,
+                          ),
+                        ),
                       ],
                     ),
                     SizedBox(height: screenWidth * 0.03),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(S.of(context).shippingTime,
-                            style: TextStyle(fontSize: screenWidth * 0.03, color: Colors.black54)),
-                        Text("16.07.2022، 20:47",
-                            style: TextStyle(fontSize: screenWidth * 0.03, color: Colors.black54)),
+                        Text(
+                          S.of(context).shippingTime,
+                          style: TextStyle(
+                            fontSize: screenWidth * 0.03,
+                            color: Colors.black54,
+                          ),
+                        ),
+                        Text(
+                          "16.07.2022، 20:47",
+                          style: TextStyle(
+                            fontSize: screenWidth * 0.03,
+                            color: Colors.black54,
+                          ),
+                        ),
                       ],
                     ),
                     SizedBox(height: screenWidth * 0.03),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(S.of(context).completionTime,
-                            style: TextStyle(fontSize: screenWidth * 0.03, color: Colors.black54)),
-                        Text("16.07.2022، 20:53",
-                            style: TextStyle(fontSize: screenWidth * 0.03, color: Colors.black54)),
+                        Text(
+                          S.of(context).completionTime,
+                          style: TextStyle(
+                            fontSize: screenWidth * 0.03,
+                            color: Colors.black54,
+                          ),
+                        ),
+                        Text(
+                          "16.07.2022، 20:53",
+                          style: TextStyle(
+                            fontSize: screenWidth * 0.03,
+                            color: Colors.black54,
+                          ),
+                        ),
                       ],
                     ),
                     SizedBox(height: screenWidth * 0.03),
                     Divider(color: Colors.grey.shade200, thickness: 1),
                     SizedBox(height: screenWidth * 0.02),
-
                   ],
                 ),
-                crossFadeState: isExpanded ? CrossFadeState.showSecond : CrossFadeState.showFirst,
+                crossFadeState:
+                    isExpanded
+                        ? CrossFadeState.showSecond
+                        : CrossFadeState.showFirst,
                 duration: const Duration(milliseconds: 300),
               ),
               ElevatedButton(

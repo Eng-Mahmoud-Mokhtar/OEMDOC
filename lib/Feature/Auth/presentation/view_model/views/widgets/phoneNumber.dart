@@ -34,10 +34,7 @@ class PhoneNumber extends StatelessWidget {
             ],
           ),
         ),
-
         SizedBox(height: screenHeight * 0.01),
-
-        /// حقل إدخال رقم الهاتف
         SizedBox(
           height: screenWidth * 0.12,
           child: DecoratedBox(

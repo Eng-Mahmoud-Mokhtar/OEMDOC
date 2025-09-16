@@ -29,10 +29,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "AddCar": MessageLookupByLibrary.simpleMessage("Add a car"),
     "AddToCart": MessageLookupByLibrary.simpleMessage("Add to Cart"),
     "AddtoCart": MessageLookupByLibrary.simpleMessage("Add to Cart"),
+    "AirConditioning": MessageLookupByLibrary.simpleMessage("Air Conditioning"),
     "AlreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "Already have an account?",
     ),
     "BasedOn_Prefix": MessageLookupByLibrary.simpleMessage("Based on"),
+    "BeltsAndChains": MessageLookupByLibrary.simpleMessage("Belts and Chains"),
+    "Brakes": MessageLookupByLibrary.simpleMessage("Brakes"),
     "Cart": MessageLookupByLibrary.simpleMessage("Cart"),
     "CashOnDelivery": MessageLookupByLibrary.simpleMessage("Cash on delivery"),
     "Categories": MessageLookupByLibrary.simpleMessage("Categories"),
@@ -51,6 +54,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Delivery Information",
     ),
     "Deliverys": MessageLookupByLibrary.simpleMessage("Delivery"),
+    "DriveShaft": MessageLookupByLibrary.simpleMessage("Drive Shaft"),
     "ElectricalAndElectronics": MessageLookupByLibrary.simpleMessage(
       "Electrical & Electronics",
     ),
@@ -64,18 +68,16 @@ class MessageLookup extends MessageLookupByLibrary {
     "FromPositiveReviews": MessageLookupByLibrary.simpleMessage(
       "From positive reviews",
     ),
+    "FuelSystem": MessageLookupByLibrary.simpleMessage("Fuel System"),
     "FullName": MessageLookupByLibrary.simpleMessage("Name"),
     "GetItNow": MessageLookupByLibrary.simpleMessage("Get it now"),
     "HelloMahmoud": MessageLookupByLibrary.simpleMessage("Hello Mahmoud"),
     "Home": MessageLookupByLibrary.simpleMessage("Home"),
-    "InstallationTools": MessageLookupByLibrary.simpleMessage(
-      "Installation Tools",
-    ),
+    "HosesAndPipes": MessageLookupByLibrary.simpleMessage("Hoses and Pipes"),
     "LatestReviews": MessageLookupByLibrary.simpleMessage("Latest reviews"),
-    "MaintenanceAndService": MessageLookupByLibrary.simpleMessage(
-      "Maintenance & Service",
-    ),
+    "Lighting": MessageLookupByLibrary.simpleMessage("Lighting"),
     "Manual": MessageLookupByLibrary.simpleMessage("Manual"),
+    "MostPopular": MessageLookupByLibrary.simpleMessage("Most Popular"),
     "MyShipments": MessageLookupByLibrary.simpleMessage("My shipments"),
     "Next": MessageLookupByLibrary.simpleMessage("Next"),
     "NotAMember": MessageLookupByLibrary.simpleMessage("Not a member?"),
@@ -84,6 +86,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "Number of results: 10",
     ),
     "Oils": MessageLookupByLibrary.simpleMessage("Oils"),
+    "Ok": MessageLookupByLibrary.simpleMessage("Ok"),
     "OnBoarding1description": MessageLookupByLibrary.simpleMessage(
       "Select your car type and browse original and compatible parts easily – without any hassle",
     ),
@@ -127,9 +130,13 @@ class MessageLookup extends MessageLookupByLibrary {
       "Search using artificial intelligence",
     ),
     "SecureArrival": MessageLookupByLibrary.simpleMessage("Secure arrival"),
+    "SelectCountry": MessageLookupByLibrary.simpleMessage("Select Country"),
     "SignUp": MessageLookupByLibrary.simpleMessage("Sign up"),
     "SimilarProducts": MessageLookupByLibrary.simpleMessage("Similar products"),
     "Skip": MessageLookupByLibrary.simpleMessage("Skip"),
+    "SparkPlugs": MessageLookupByLibrary.simpleMessage("Spark Plugs"),
+    "Stabilizers": MessageLookupByLibrary.simpleMessage("Stabilizers"),
+    "Steering": MessageLookupByLibrary.simpleMessage("Steering"),
     "SubVerifyPhoneNumber": MessageLookupByLibrary.simpleMessage(
       "Enter the verification code sent to 01017900067",
     ),
@@ -141,6 +148,8 @@ class MessageLookup extends MessageLookupByLibrary {
       "Suspension & Alignment",
     ),
     "Tax": MessageLookupByLibrary.simpleMessage("Tax"),
+    "Tires": MessageLookupByLibrary.simpleMessage("Tires"),
+    "Tools": MessageLookupByLibrary.simpleMessage("Tools"),
     "TopRatedSeller": MessageLookupByLibrary.simpleMessage("Top-rated seller"),
     "Total": MessageLookupByLibrary.simpleMessage("Total"),
     "TrackShipment": MessageLookupByLibrary.simpleMessage(
@@ -152,9 +161,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "VerifyPhoneNumber": MessageLookupByLibrary.simpleMessage(
       "Verify Phone Number",
     ),
+    "Wipers": MessageLookupByLibrary.simpleMessage("Wipers"),
     "addAddress": MessageLookupByLibrary.simpleMessage("Add Address"),
     "addAddressesInfo": MessageLookupByLibrary.simpleMessage(
       "Add your addresses and choose anytime",
+    ),
+    "addCarPageSubtitle": MessageLookupByLibrary.simpleMessage(
+      "Add your favorite cars, shop products & enjoy offers",
     ),
     "addCoupon": MessageLookupByLibrary.simpleMessage("Add Coupon"),
     "addHashtag": MessageLookupByLibrary.simpleMessage("Add Hashtag"),
@@ -173,9 +186,22 @@ class MessageLookup extends MessageLookupByLibrary {
     "buildingNumber": MessageLookupByLibrary.simpleMessage("Building"),
     "cancel": MessageLookupByLibrary.simpleMessage("Cancel"),
     "cancelledShipments": MessageLookupByLibrary.simpleMessage("Cancelled"),
+    "carHistory": MessageLookupByLibrary.simpleMessage("Your car\'s history"),
+    "carHistoryDescription": MessageLookupByLibrary.simpleMessage(
+      "Check your car\'s record and get a comprehensive report including damages, odometer readings, theft history, and more.",
+    ),
+    "carHistoryDetails": MessageLookupByLibrary.simpleMessage(
+      "Inspection Details",
+    ),
     "cart": MessageLookupByLibrary.simpleMessage("Cart"),
     "cash": MessageLookupByLibrary.simpleMessage("Cash"),
+    "checkCarHistory": MessageLookupByLibrary.simpleMessage(
+      "Check your car\'s history easily",
+    ),
     "city": MessageLookupByLibrary.simpleMessage("City"),
+    "clearChassisNumber": MessageLookupByLibrary.simpleMessage(
+      "Scan Chassis Number",
+    ),
     "comfraCommunity": MessageLookupByLibrary.simpleMessage("Comfra Community"),
     "community": MessageLookupByLibrary.simpleMessage("Community"),
     "completePurchase": MessageLookupByLibrary.simpleMessage(
@@ -189,16 +215,23 @@ class MessageLookup extends MessageLookupByLibrary {
     "coupons": MessageLookupByLibrary.simpleMessage("Coupons"),
     "currentShipments": MessageLookupByLibrary.simpleMessage("Current"),
     "day": MessageLookupByLibrary.simpleMessage("day"),
+    "delete": MessageLookupByLibrary.simpleMessage("Delete"),
     "delivered": MessageLookupByLibrary.simpleMessage("Order Delivered"),
     "deliveredAt": MessageLookupByLibrary.simpleMessage("Delivered at"),
     "deliveryFailed": MessageLookupByLibrary.simpleMessage("Delivery failed"),
     "deliveryTo": MessageLookupByLibrary.simpleMessage("Delivery To"),
     "description": MessageLookupByLibrary.simpleMessage("Description"),
     "discount": MessageLookupByLibrary.simpleMessage("Discount"),
+    "discoverFullCarHistory": MessageLookupByLibrary.simpleMessage(
+      "Discover your car\'s full history",
+    ),
     "edit": MessageLookupByLibrary.simpleMessage("edit"),
     "editProfile": MessageLookupByLibrary.simpleMessage("Edit Profile"),
     "emptyCart": MessageLookupByLibrary.simpleMessage("Your cart is empty!"),
     "engine": MessageLookupByLibrary.simpleMessage("Engine"),
+    "enterChassis": MessageLookupByLibrary.simpleMessage(
+      "Please enter the car chassis number.",
+    ),
     "enterCity": MessageLookupByLibrary.simpleMessage("Enter city name"),
     "enterCouponCode": MessageLookupByLibrary.simpleMessage(
       "Enter Coupon Code",
@@ -215,6 +248,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "flatNumber": MessageLookupByLibrary.simpleMessage("Flat"),
     "floorNumber": MessageLookupByLibrary.simpleMessage("Floor"),
+    "getReport": MessageLookupByLibrary.simpleMessage("Get Report"),
     "home": MessageLookupByLibrary.simpleMessage("Home"),
     "howCanIHelp": MessageLookupByLibrary.simpleMessage(
       "How can I help you today?",
@@ -229,6 +263,11 @@ class MessageLookup extends MessageLookupByLibrary {
     "logout": MessageLookupByLibrary.simpleMessage("Logout"),
     "model": MessageLookupByLibrary.simpleMessage("Model"),
     "myShipments": MessageLookupByLibrary.simpleMessage("My Shipments"),
+    "newNotification": MessageLookupByLibrary.simpleMessage("New Notification"),
+    "noDataMessage": MessageLookupByLibrary.simpleMessage(
+      "No data was found for this car",
+    ),
+    "noDataTitle": MessageLookupByLibrary.simpleMessage("No Data"),
     "noFavorites": MessageLookupByLibrary.simpleMessage("No favorite products"),
     "noNotifications": MessageLookupByLibrary.simpleMessage(
       "You have no notifications yet",
@@ -263,7 +302,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "searchByPart": MessageLookupByLibrary.simpleMessage(
       "Search by part name or number",
     ),
+    "searchCarHint": MessageLookupByLibrary.simpleMessage("Search by car name"),
+    "searchCountry": MessageLookupByLibrary.simpleMessage("Search by country"),
     "searchHint": MessageLookupByLibrary.simpleMessage("Search for any topic"),
+    "searchNotFound": MessageLookupByLibrary.simpleMessage("Search Not Found"),
     "settings": MessageLookupByLibrary.simpleMessage("Settings"),
     "shipment": MessageLookupByLibrary.simpleMessage("Shipment"),
     "shippingTime": MessageLookupByLibrary.simpleMessage("Shipping Time"),
@@ -276,7 +318,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "support": MessageLookupByLibrary.simpleMessage("Support"),
     "total": MessageLookupByLibrary.simpleMessage("Total"),
     "trendingTopics": MessageLookupByLibrary.simpleMessage("Trending Topics"),
+    "vehicleHistory": MessageLookupByLibrary.simpleMessage("Vehicle history"),
     "visa": MessageLookupByLibrary.simpleMessage("Visa"),
+    "warningTitle": MessageLookupByLibrary.simpleMessage("Warning"),
     "webSite": MessageLookupByLibrary.simpleMessage("Web Site"),
     "welcomeMessage": MessageLookupByLibrary.simpleMessage(
       "Hello! Let\'s determine the problem together: what is the car type, year, and what issue are you facing?",

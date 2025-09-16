@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:oemdoc/Core/utiles/Colors.dart';
 import 'package:oemdoc/Feature/Home/presentation/view_model/views/widgets/ConvexNotchedShape.dart';
 import '../../../../../generated/l10n.dart';
-import '../../../../Profile/presentation/view_model/views/Profile.dart';
+import '../../../../Profile/presentation/view_model/views/ProfilePage.dart';
 import '../../../../Search/presentation/view_model/views/SearchPage.dart';
 import '../../../../cart/presentation/view_model/views/Cart.dart';
-import 'Home.dart';
+import 'HomeBody.dart';
 import 'PersonalAssistant.dart';
 
 class HomeStructure extends StatefulWidget {
@@ -26,11 +26,7 @@ class _HomeStructureState extends State<HomeStructure> {
     _pages.addAll([
       const HomePage(),
       const SearchPage(),
-      Cart(onNavigateToSearch: () {
-        setState(() {
-          _selectedIndex = 1;
-        });
-      }),
+      Cart(),
       const ProfilePage(),
     ]);
   }
@@ -40,10 +36,7 @@ class _HomeStructureState extends State<HomeStructure> {
     final screenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       resizeToAvoidBottomInset: false,
-      body: IndexedStack(
-        index: _selectedIndex,
-        children: _pages,
-      ),
+      body: IndexedStack(index: _selectedIndex, children: _pages),
       floatingActionButton: GestureDetector(
         onTap: () {
           Navigator.push(
@@ -108,7 +101,7 @@ class _HomeStructureState extends State<HomeStructure> {
                   image: "Assets/bag.png",
                   selectedImage: "Assets/cart2.png",
                   label: S.of(context).Cart,
-                  index: 2, // هنا عدلنا الـ index عشان يتوافق مع _pages
+                  index: 2,
                   screenWidth: screenWidth,
                 ),
                 _buildNavItem(
@@ -160,7 +153,7 @@ class _HomeStructureState extends State<HomeStructure> {
               style: TextStyle(
                 color: ThirdColor,
                 fontWeight: FontWeight.bold,
-                fontSize: screenWidth * 0.025,
+                fontSize: screenWidth * 0.02,
               ),
             ),
           ),

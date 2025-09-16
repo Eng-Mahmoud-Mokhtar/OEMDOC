@@ -68,15 +68,15 @@ class Code extends StatelessWidget {
                         bool isRTL = Directionality.of(context) == TextDirection.rtl;
                         if (value.isNotEmpty) {
                           if (!isRTL && index < controllers.length - 1) {
-                            FocusScope.of(context).nextFocus(); // LTR: إلى اليمين
+                            FocusScope.of(context).nextFocus();
                           } else if (isRTL && index > 0) {
-                            FocusScope.of(context).previousFocus(); // RTL: إلى اليسار
+                            FocusScope.of(context).previousFocus();
                           }
                         } else {
                           if (!isRTL && index > 0) {
-                            FocusScope.of(context).previousFocus(); // LTR: العودة للخلف
+                            FocusScope.of(context).previousFocus();
                           } else if (isRTL && index < controllers.length - 1) {
-                            FocusScope.of(context).nextFocus(); // RTL: العودة للخلف
+                            FocusScope.of(context).nextFocus();
                           }
                         }
                       },

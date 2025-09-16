@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:oemdoc/Feature/CarHistory/presentation/view_model/views/CarHistory.dart';
 import 'package:oemdoc/Feature/Home/presentation/view_model/views/PersonalAssistant.dart';
 import '../../../../../../Core/utiles/Colors.dart';
 import '../../../../../../generated/l10n.dart';
-import '../../../../../MyShipment/presentation/view_model/views/MyShipmentsPage.dart';
 
 class SectionService extends StatelessWidget {
   const SectionService({super.key});
@@ -22,7 +22,7 @@ class SectionService extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => const MyShipmentsPage(),
+                  builder: (context) => const Carhistory(),
                 ),
               );
             },
@@ -37,14 +37,14 @@ class SectionService extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Image.asset(
-                    'Assets/material-symbols_delivery-truck-speed-rounded.png',
+                    'Assets/icon-park-solid_table-report.png',
                     width: screenWidth * 0.07,
                     height: screenWidth * 0.07,
                     fit: BoxFit.contain,
                   ),
                   SizedBox(height: screenHeight * 0.01),
                   Text(
-                    S.of(context).MyShipments,
+                    S.of(context).carHistory,
                     style: TextStyle(
                       fontSize: screenWidth * 0.03,
                       fontWeight: FontWeight.w500,
@@ -53,7 +53,7 @@ class SectionService extends StatelessWidget {
                   ),
                   SizedBox(height: screenHeight * 0.005),
                   Text(
-                    S.of(context).TrackShipment,
+                    S.of(context).checkCarHistory,
                     style: TextStyle(
                       fontSize: screenWidth * 0.025,
                       fontWeight: FontWeight.w500,
@@ -96,6 +96,7 @@ class SectionService extends StatelessWidget {
                     width: screenWidth * 0.07,
                     height: screenWidth * 0.07,
                     fit: BoxFit.contain,
+
                   ),
                   SizedBox(height: screenHeight * 0.01),
                   Text(

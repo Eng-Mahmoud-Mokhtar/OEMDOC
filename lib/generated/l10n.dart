@@ -434,26 +434,6 @@ class S {
     return Intl.message('Exhaust', name: 'Exhaust', desc: '', args: []);
   }
 
-  /// `Maintenance & Service`
-  String get MaintenanceAndService {
-    return Intl.message(
-      'Maintenance & Service',
-      name: 'MaintenanceAndService',
-      desc: '',
-      args: [],
-    );
-  }
-
-  /// `Installation Tools`
-  String get InstallationTools {
-    return Intl.message(
-      'Installation Tools',
-      name: 'InstallationTools',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Accessories`
   String get Accessories {
     return Intl.message('Accessories', name: 'Accessories', desc: '', args: []);
@@ -1397,6 +1377,271 @@ class S {
       desc: '',
       args: [],
     );
+  }
+
+  /// `Add your favorite cars, shop products & enjoy offers`
+  String get addCarPageSubtitle {
+    return Intl.message(
+      'Add your favorite cars, shop products & enjoy offers',
+      name: 'addCarPageSubtitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search by car name`
+  String get searchCarHint {
+    return Intl.message(
+      'Search by car name',
+      name: 'searchCarHint',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Most Popular`
+  String get MostPopular {
+    return Intl.message(
+      'Most Popular',
+      name: 'MostPopular',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search Not Found`
+  String get searchNotFound {
+    return Intl.message(
+      'Search Not Found',
+      name: 'searchNotFound',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Select Country`
+  String get SelectCountry {
+    return Intl.message(
+      'Select Country',
+      name: 'SelectCountry',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Search by country`
+  String get searchCountry {
+    return Intl.message(
+      'Search by country',
+      name: 'searchCountry',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Your car's history`
+  String get carHistory {
+    return Intl.message(
+      'Your car\'s history',
+      name: 'carHistory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Discover your car's full history`
+  String get discoverFullCarHistory {
+    return Intl.message(
+      'Discover your car\'s full history',
+      name: 'discoverFullCarHistory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Check your car's record and get a comprehensive report including damages, odometer readings, theft history, and more.`
+  String get carHistoryDescription {
+    return Intl.message(
+      'Check your car\'s record and get a comprehensive report including damages, odometer readings, theft history, and more.',
+      name: 'carHistoryDescription',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Get Report`
+  String get getReport {
+    return Intl.message('Get Report', name: 'getReport', desc: '', args: []);
+  }
+
+  /// `Scan Chassis Number`
+  String get clearChassisNumber {
+    return Intl.message(
+      'Scan Chassis Number',
+      name: 'clearChassisNumber',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Vehicle history`
+  String get vehicleHistory {
+    return Intl.message(
+      'Vehicle history',
+      name: 'vehicleHistory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Check your car's history easily`
+  String get checkCarHistory {
+    return Intl.message(
+      'Check your car\'s history easily',
+      name: 'checkCarHistory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Tires`
+  String get Tires {
+    return Intl.message('Tires', name: 'Tires', desc: '', args: []);
+  }
+
+  /// `Brakes`
+  String get Brakes {
+    return Intl.message('Brakes', name: 'Brakes', desc: '', args: []);
+  }
+
+  /// `Belts and Chains`
+  String get BeltsAndChains {
+    return Intl.message(
+      'Belts and Chains',
+      name: 'BeltsAndChains',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Wipers`
+  String get Wipers {
+    return Intl.message('Wipers', name: 'Wipers', desc: '', args: []);
+  }
+
+  /// `Spark Plugs`
+  String get SparkPlugs {
+    return Intl.message('Spark Plugs', name: 'SparkPlugs', desc: '', args: []);
+  }
+
+  /// `Lighting`
+  String get Lighting {
+    return Intl.message('Lighting', name: 'Lighting', desc: '', args: []);
+  }
+
+  /// `Drive Shaft`
+  String get DriveShaft {
+    return Intl.message('Drive Shaft', name: 'DriveShaft', desc: '', args: []);
+  }
+
+  /// `Air Conditioning`
+  String get AirConditioning {
+    return Intl.message(
+      'Air Conditioning',
+      name: 'AirConditioning',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Hoses and Pipes`
+  String get HosesAndPipes {
+    return Intl.message(
+      'Hoses and Pipes',
+      name: 'HosesAndPipes',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Fuel System`
+  String get FuelSystem {
+    return Intl.message('Fuel System', name: 'FuelSystem', desc: '', args: []);
+  }
+
+  /// `Stabilizers`
+  String get Stabilizers {
+    return Intl.message('Stabilizers', name: 'Stabilizers', desc: '', args: []);
+  }
+
+  /// `Steering`
+  String get Steering {
+    return Intl.message('Steering', name: 'Steering', desc: '', args: []);
+  }
+
+  /// `Tools`
+  String get Tools {
+    return Intl.message('Tools', name: 'Tools', desc: '', args: []);
+  }
+
+  /// `Ok`
+  String get Ok {
+    return Intl.message('Ok', name: 'Ok', desc: '', args: []);
+  }
+
+  /// `Warning`
+  String get warningTitle {
+    return Intl.message('Warning', name: 'warningTitle', desc: '', args: []);
+  }
+
+  /// `Please enter the car chassis number.`
+  String get enterChassis {
+    return Intl.message(
+      'Please enter the car chassis number.',
+      name: 'enterChassis',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No Data`
+  String get noDataTitle {
+    return Intl.message('No Data', name: 'noDataTitle', desc: '', args: []);
+  }
+
+  /// `No data was found for this car`
+  String get noDataMessage {
+    return Intl.message(
+      'No data was found for this car',
+      name: 'noDataMessage',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Inspection Details`
+  String get carHistoryDetails {
+    return Intl.message(
+      'Inspection Details',
+      name: 'carHistoryDetails',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `New Notification`
+  String get newNotification {
+    return Intl.message(
+      'New Notification',
+      name: 'newNotification',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delete`
+  String get delete {
+    return Intl.message('Delete', name: 'delete', desc: '', args: []);
   }
 }
 

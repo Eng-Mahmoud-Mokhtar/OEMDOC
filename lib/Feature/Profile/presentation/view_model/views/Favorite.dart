@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import '../../../../../Core/Widgets/AppBar.dart';
 import '../../../../../Core/utiles/Colors.dart';
 import '../../../../../generated/l10n.dart';
-import '../../../../SuggerstedForYou/presentation/view_model/Product.dart';
-import '../../../../SuggerstedForYou/presentation/view_model/views/ProductDetailsPage.dart';
+import '../../../../Product/presentation/view_model/Product.dart';
+import '../../../../Product/presentation/view_model/views/ProductDetailsPage.dart';
 
 class Favorite extends StatefulWidget {
   const Favorite({super.key});

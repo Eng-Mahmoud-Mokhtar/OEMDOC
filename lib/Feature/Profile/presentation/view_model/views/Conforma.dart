@@ -155,10 +155,8 @@ class _ConformaState extends State<Conforma> {
               ),
             ),
           ),
-
-          // 🟢 المحتوى (رائج أو بوستات)
           if (isSearching)
-            buildTrending(size)   // 🔥 الرائج يبدأ من بعد السيرش مباشرة
+            buildTrending(size)
           else
             ...posts.map((post) => buildPostCard(post, size)).toList(),
         ],
@@ -209,8 +207,6 @@ class _ConformaState extends State<Conforma> {
       ),
     );
   }
-
-// 🟢 كارت البوست
   Widget buildPostCard(Map<String, dynamic> post, Size size) {
     return Card(
       color: Colors.white,
@@ -307,142 +303,6 @@ class _ConformaState extends State<Conforma> {
           ],
         ),
       ),
-    );
-  }
-
-  Widget buildPostsList(Size size) {
-    return ListView.builder(
-      padding: EdgeInsets.all(size.width * 0.04),
-      itemCount: posts.length,
-      itemBuilder: (context, index) {
-        final post = posts[index];
-        return Card(
-          color: Colors.white,
-          margin: EdgeInsets.only(bottom: size.height * 0.02),
-          elevation: 2,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(size.width * 0.04),
-          ),
-          child: Padding(
-            padding: EdgeInsets.all(size.width * 0.03),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                // 🟢 الهيدر
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.symmetric(
-                        horizontal: size.width * 0.02,
-                      ),
-                      child: CircleAvatar(
-                        radius: size.width * 0.06, // ✅ حجم الأفاتار
-                        backgroundColor: Colors.grey.shade300,
-                        child: Icon(
-                          Icons.person,
-                          color: ThirdColor,
-                          size: size.width * 0.05, // ✅ أيقونة جوه الأفاتار
-                        ),
-                      ),
-                    ),
-                    SizedBox(width: size.width * 0.02),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          post["name"],
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: size.width * 0.035,
-                            color: KprimaryText
-                          ),
-                        ),
-                        Text(
-                          post["time"],
-                          style: TextStyle(
-                            color: Colors.grey,
-                            fontSize: size.width * 0.03,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-
-                SizedBox(height: size.height * 0.02),
-                if (post["content"] != null && post["content"].toString().isNotEmpty)
-                  Text(
-                    post["content"],
-                    style: TextStyle(
-                      fontSize: size.width * 0.03,
-                      height: 1.4,
-                      fontWeight: FontWeight.w400
-                    ),
-                  ),
-                if (post["image"] != null) ...[
-                  SizedBox(height: size.height * 0.02),
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(16),
-                    child: post["isAsset"] == true
-                        ? Image.asset(
-                      post["image"],
-                      width: double.infinity,
-                      height: size.height * 0.25,
-                      fit: BoxFit.cover,
-                    )
-                        : Image.file(
-                      File(post["image"]),
-                      width: double.infinity,
-                      height: size.height * 0.1, // ✅ طول ثابت للصورة
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                ],
-                SizedBox(height: size.height * 0.02),
-                Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Icon(
-                      Icons.favorite_border,
-                      size: size.width * 0.05,
-                      color: Colors.grey,
-                    ),
-                    SizedBox(width: size.width * 0.01),
-                    Text(
-                      post["likes"] ?? "0",
-                      style: TextStyle(fontSize: size.width * 0.03,color: KprimaryText), // ✅ حجم النص
-                    ),
-                    SizedBox(width: size.width * 0.04),
-                    Icon(
-                      Icons.comment_outlined,
-                      size: size.width * 0.05,
-                      color: Colors.grey,
-                    ),
-                    SizedBox(width: size.width * 0.01),
-                    Text(
-                      post["comments"] ?? "0",
-                      style: TextStyle(fontSize: size.width * 0.03,color: KprimaryText),
-                    ),
-                    SizedBox(width: size.width * 0.04),
-                    Icon(
-                      Icons.remove_red_eye_outlined,
-                      size: size.width * 0.05,
-                      color: Colors.grey,
-                    ),
-                    SizedBox(width: size.width * 0.01),
-                    Text(
-                      post["views"] ?? "0",
-                      style: TextStyle(fontSize: size.width * 0.03,color: KprimaryText),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-          ),
-        );
-      },
     );
   }
 }

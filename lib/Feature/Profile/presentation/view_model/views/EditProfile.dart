@@ -5,7 +5,6 @@ import 'package:oemdoc/Core/utiles/Colors.dart';
 import '../../../../../Core/Widgets/AppBar.dart';
 import '../../../../../generated/l10n.dart';
 
-// =========== Cubit ===========
 class EditProfileCubit extends Cubit<Map<String, String>> {
   EditProfileCubit()
       : super({
@@ -18,7 +17,6 @@ class EditProfileCubit extends Cubit<Map<String, String>> {
   }
 }
 
-// =========== Screen ===========
 class EditProfile extends StatelessWidget {
   const EditProfile({Key? key}) : super(key: key);
 
@@ -31,7 +29,6 @@ class EditProfile extends StatelessWidget {
   }
 }
 
-// =========== UI ===========
 class EditProfileView extends StatelessWidget {
   const EditProfileView({Key? key}) : super(key: key);
 
@@ -106,7 +103,6 @@ class EditProfileView extends StatelessWidget {
     );
   }
 
-  // صورة البروفايل
   Widget _buildProfileImage(double screenWidth) {
     final String? imagePath = null;
 
@@ -223,7 +219,6 @@ class EditProfileView extends StatelessWidget {
     ]);
   }
 
-  // أزرار الحفظ والإلغاء
   Widget _buildSaveCancelButtons(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
 
@@ -263,9 +258,7 @@ class EditProfileView extends StatelessWidget {
           child: Container(
             height: screenWidth * 0.12,
             child: ElevatedButton(
-              onPressed: () {
-                // TODO: save logic here
-              },
+              onPressed: () {},
               style: ElevatedButton.styleFrom(
                 padding: EdgeInsets.zero,
                 shape: RoundedRectangleBorder(

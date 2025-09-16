@@ -27,10 +27,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "AddCar": MessageLookupByLibrary.simpleMessage("اضافه سياره"),
     "AddToCart": MessageLookupByLibrary.simpleMessage("اضف للعربة"),
     "AddtoCart": MessageLookupByLibrary.simpleMessage("اضف للسلة"),
+    "AirConditioning": MessageLookupByLibrary.simpleMessage("تكييف الهواء"),
     "AlreadyHaveAnAccount": MessageLookupByLibrary.simpleMessage(
       "هل لديك حساب بالفعل؟",
     ),
     "BasedOn_Prefix": MessageLookupByLibrary.simpleMessage("بناءً على"),
+    "BeltsAndChains": MessageLookupByLibrary.simpleMessage("السيور والسلاسل"),
+    "Brakes": MessageLookupByLibrary.simpleMessage("نظام الفرامل"),
     "Cart": MessageLookupByLibrary.simpleMessage("السلة"),
     "CashOnDelivery": MessageLookupByLibrary.simpleMessage(
       "الدفع عند الاستلام",
@@ -51,6 +54,7 @@ class MessageLookup extends MessageLookupByLibrary {
       "معلومات التسليم",
     ),
     "Deliverys": MessageLookupByLibrary.simpleMessage("التوصيل"),
+    "DriveShaft": MessageLookupByLibrary.simpleMessage("عمود الكردان"),
     "ElectricalAndElectronics": MessageLookupByLibrary.simpleMessage(
       "الكهرباء والالكترونيات",
     ),
@@ -64,22 +68,23 @@ class MessageLookup extends MessageLookupByLibrary {
     "FromPositiveReviews": MessageLookupByLibrary.simpleMessage(
       "من التقييمات الإيجابية",
     ),
+    "FuelSystem": MessageLookupByLibrary.simpleMessage("نظام إمداد الوقود"),
     "FullName": MessageLookupByLibrary.simpleMessage("الاسم"),
     "GetItNow": MessageLookupByLibrary.simpleMessage("احصل عليه الان"),
     "HelloMahmoud": MessageLookupByLibrary.simpleMessage("أهلين محمود"),
     "Home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
-    "InstallationTools": MessageLookupByLibrary.simpleMessage("ادوات التثبيت"),
+    "HosesAndPipes": MessageLookupByLibrary.simpleMessage("الأنابيب والخراطيم"),
     "LatestReviews": MessageLookupByLibrary.simpleMessage("أحدث التقييمات"),
-    "MaintenanceAndService": MessageLookupByLibrary.simpleMessage(
-      "الصيانه والخدمة",
-    ),
+    "Lighting": MessageLookupByLibrary.simpleMessage("الإضاءة"),
     "Manual": MessageLookupByLibrary.simpleMessage("يدوي"),
+    "MostPopular": MessageLookupByLibrary.simpleMessage("الاكثر شيوعا"),
     "MyShipments": MessageLookupByLibrary.simpleMessage("شحناتي"),
     "Next": MessageLookupByLibrary.simpleMessage("التالي"),
     "NotAMember": MessageLookupByLibrary.simpleMessage("لست عضوًا؟"),
     "Number": MessageLookupByLibrary.simpleMessage("رقم"),
     "NumberOfResults": MessageLookupByLibrary.simpleMessage("عدد النتائج: 10"),
     "Oils": MessageLookupByLibrary.simpleMessage("زيوت"),
+    "Ok": MessageLookupByLibrary.simpleMessage("حسناً"),
     "OnBoarding1description": MessageLookupByLibrary.simpleMessage(
       "حدد نوع سيارتك واستعرض القطع الأصلية والمتوافقة بسهولة – بدون أي تعقيد.",
     ),
@@ -119,9 +124,13 @@ class MessageLookup extends MessageLookupByLibrary {
       "ابحث باستخدام الذكاء الاصطناعي",
     ),
     "SecureArrival": MessageLookupByLibrary.simpleMessage("وصول آمن"),
+    "SelectCountry": MessageLookupByLibrary.simpleMessage("اختر البلد"),
     "SignUp": MessageLookupByLibrary.simpleMessage("إنشاء حساب"),
     "SimilarProducts": MessageLookupByLibrary.simpleMessage("منتجات مشابهة"),
     "Skip": MessageLookupByLibrary.simpleMessage("تخطي"),
+    "SparkPlugs": MessageLookupByLibrary.simpleMessage("البواجي"),
+    "Stabilizers": MessageLookupByLibrary.simpleMessage("المثبتات"),
+    "Steering": MessageLookupByLibrary.simpleMessage("التوجيه"),
     "SubVerifyPhoneNumber": MessageLookupByLibrary.simpleMessage(
       "أدخل رمز التحقق المرسل إلى 01017900067",
     ),
@@ -133,6 +142,8 @@ class MessageLookup extends MessageLookupByLibrary {
       "التعليق والتوجيد",
     ),
     "Tax": MessageLookupByLibrary.simpleMessage("الضريبة"),
+    "Tires": MessageLookupByLibrary.simpleMessage("كاوتشات"),
+    "Tools": MessageLookupByLibrary.simpleMessage("أدوات"),
     "TopRatedSeller": MessageLookupByLibrary.simpleMessage(
       "البائع ذو تقييم عالي",
     ),
@@ -146,9 +157,13 @@ class MessageLookup extends MessageLookupByLibrary {
     "VerifyPhoneNumber": MessageLookupByLibrary.simpleMessage(
       "تأكيد رقم الهاتف",
     ),
+    "Wipers": MessageLookupByLibrary.simpleMessage("المساحات"),
     "addAddress": MessageLookupByLibrary.simpleMessage("إضافة عنوان"),
     "addAddressesInfo": MessageLookupByLibrary.simpleMessage(
       "أضف عناوينك وقم بالاختيار في أي وقت",
+    ),
+    "addCarPageSubtitle": MessageLookupByLibrary.simpleMessage(
+      "أضف نوع سياراتك المفضلة وتسوق المنتجات واستمتع بالعروض",
     ),
     "addCoupon": MessageLookupByLibrary.simpleMessage("إضافة كوبون"),
     "addHashtag": MessageLookupByLibrary.simpleMessage("أضف هاشتاج"),
@@ -165,9 +180,20 @@ class MessageLookup extends MessageLookupByLibrary {
     "buildingNumber": MessageLookupByLibrary.simpleMessage("رقم المبنى"),
     "cancel": MessageLookupByLibrary.simpleMessage("الغاء"),
     "cancelledShipments": MessageLookupByLibrary.simpleMessage("ملغية"),
+    "carHistory": MessageLookupByLibrary.simpleMessage("تاريخ سيارتك"),
+    "carHistoryDescription": MessageLookupByLibrary.simpleMessage(
+      "تحقق من سجل السيارة واحصل على تقرير شامل يتضمن الأضرار، قراءات العداد، حالات السرقة، والمزيد.",
+    ),
+    "carHistoryDetails": MessageLookupByLibrary.simpleMessage("تفاصيل الكشف"),
     "cart": MessageLookupByLibrary.simpleMessage("السلة"),
     "cash": MessageLookupByLibrary.simpleMessage("نقدًا"),
+    "checkCarHistory": MessageLookupByLibrary.simpleMessage(
+      "افحص تاريخ سيارتك بسهولة",
+    ),
     "city": MessageLookupByLibrary.simpleMessage("المدينة"),
+    "clearChassisNumber": MessageLookupByLibrary.simpleMessage(
+      "مسح رقم المركبة",
+    ),
     "comfraCommunity": MessageLookupByLibrary.simpleMessage("مجتمع Comfra"),
     "community": MessageLookupByLibrary.simpleMessage("المجتمع"),
     "completePurchase": MessageLookupByLibrary.simpleMessage("إتمام الشراء"),
@@ -179,16 +205,23 @@ class MessageLookup extends MessageLookupByLibrary {
     "coupons": MessageLookupByLibrary.simpleMessage("الكوبونات"),
     "currentShipments": MessageLookupByLibrary.simpleMessage("حالية"),
     "day": MessageLookupByLibrary.simpleMessage("يوم"),
+    "delete": MessageLookupByLibrary.simpleMessage("حذف"),
     "delivered": MessageLookupByLibrary.simpleMessage("تم تسليم الطلب"),
     "deliveredAt": MessageLookupByLibrary.simpleMessage("تم التسليم في"),
     "deliveryFailed": MessageLookupByLibrary.simpleMessage("لم ينجح الاستلام"),
     "deliveryTo": MessageLookupByLibrary.simpleMessage("يتم التوصيل إلى"),
     "description": MessageLookupByLibrary.simpleMessage("الوصف"),
     "discount": MessageLookupByLibrary.simpleMessage("سعر الخصم"),
+    "discoverFullCarHistory": MessageLookupByLibrary.simpleMessage(
+      "اكتشف التاريخ الكامل لسيارتك",
+    ),
     "edit": MessageLookupByLibrary.simpleMessage("تعديل"),
     "editProfile": MessageLookupByLibrary.simpleMessage("تعديل الملف الشخصي"),
     "emptyCart": MessageLookupByLibrary.simpleMessage("السلة فارغة!"),
     "engine": MessageLookupByLibrary.simpleMessage("المحرك"),
+    "enterChassis": MessageLookupByLibrary.simpleMessage(
+      "من فضلك أدخل رقم الشاسيه للسيارة.",
+    ),
     "enterCity": MessageLookupByLibrary.simpleMessage("أدخل اسم المدينة"),
     "enterCouponCode": MessageLookupByLibrary.simpleMessage("أدخل كود الخصم"),
     "exclusiveOffer": MessageLookupByLibrary.simpleMessage(
@@ -203,6 +236,7 @@ class MessageLookup extends MessageLookupByLibrary {
     ),
     "flatNumber": MessageLookupByLibrary.simpleMessage("رقم الشقة"),
     "floorNumber": MessageLookupByLibrary.simpleMessage("رقم الدور"),
+    "getReport": MessageLookupByLibrary.simpleMessage("احصل على التقرير"),
     "home": MessageLookupByLibrary.simpleMessage("المنزل"),
     "howCanIHelp": MessageLookupByLibrary.simpleMessage(
       "كيف يمكنني مساعدتك اليوم؟",
@@ -217,6 +251,11 @@ class MessageLookup extends MessageLookupByLibrary {
     "logout": MessageLookupByLibrary.simpleMessage("الخروج من التطبيق"),
     "model": MessageLookupByLibrary.simpleMessage("الموديل"),
     "myShipments": MessageLookupByLibrary.simpleMessage("شحناتي"),
+    "newNotification": MessageLookupByLibrary.simpleMessage("إشعار جديد"),
+    "noDataMessage": MessageLookupByLibrary.simpleMessage(
+      "لم يتم العثور على أي بيانات لهذه السيارة",
+    ),
+    "noDataTitle": MessageLookupByLibrary.simpleMessage("لا توجد بيانات"),
     "noFavorites": MessageLookupByLibrary.simpleMessage("لا توجد منتجات مفضلة"),
     "noNotifications": MessageLookupByLibrary.simpleMessage(
       "ليس لديك إشعارات بعد",
@@ -251,7 +290,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "searchByPart": MessageLookupByLibrary.simpleMessage(
       "ابحث باسم القطعة أو رقمها",
     ),
+    "searchCarHint": MessageLookupByLibrary.simpleMessage("ابحث باسم السيارة"),
+    "searchCountry": MessageLookupByLibrary.simpleMessage("ابحث باسم البلد"),
     "searchHint": MessageLookupByLibrary.simpleMessage("ابحث عن أي موضوع"),
+    "searchNotFound": MessageLookupByLibrary.simpleMessage("بحث غير موجود"),
     "settings": MessageLookupByLibrary.simpleMessage("الإعدادات"),
     "shipment": MessageLookupByLibrary.simpleMessage("شحنة"),
     "shippingTime": MessageLookupByLibrary.simpleMessage("وقت الشحن"),
@@ -264,7 +306,9 @@ class MessageLookup extends MessageLookupByLibrary {
     "support": MessageLookupByLibrary.simpleMessage("الدعم الفني"),
     "total": MessageLookupByLibrary.simpleMessage("الإجمالي"),
     "trendingTopics": MessageLookupByLibrary.simpleMessage("المواضيع الشائعة"),
+    "vehicleHistory": MessageLookupByLibrary.simpleMessage("تاريخ المركبة"),
     "visa": MessageLookupByLibrary.simpleMessage("فيزا"),
+    "warningTitle": MessageLookupByLibrary.simpleMessage("تحذير"),
     "webSite": MessageLookupByLibrary.simpleMessage("الموقع الإلكتروني"),
     "welcomeMessage": MessageLookupByLibrary.simpleMessage(
       "أهلاً بيك! خلينا نحدد المشكلة مع بعض بالضبط: إي هو نوع العربية وسنة التصنيع وإيه المشكلة التي تواجهها؟",

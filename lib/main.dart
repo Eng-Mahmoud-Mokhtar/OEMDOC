@@ -1,20 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:device_preview/device_preview.dart';
 import 'package:oemdoc/Feature/Splash/presentation/view_model/views/SplashScreen.dart';
 import 'package:oemdoc/generated/l10n.dart';
 import 'Core/utiles/LocaleCubit.dart';
 
-
 void main() {
   runApp(
-    DevicePreview(
-      enabled: false,
-      builder: (context) => BlocProvider<LocaleCubit>(
-        create: (_) => LocaleCubit(),
-        child: const MyApp(),
-      ),
+    BlocProvider<LocaleCubit>(
+      create: (_) => LocaleCubit(),
+      child: const MyApp(),
     ),
   );
 }
@@ -36,14 +31,6 @@ class MyApp extends StatelessWidget {
             GlobalWidgetsLocalizations.delegate,
             GlobalCupertinoLocalizations.delegate,
           ],
-          builder: (context, child) {
-            return Directionality(
-              textDirection: locale.languageCode == 'ar'
-                  ? TextDirection.rtl
-                  : TextDirection.ltr,
-              child: DevicePreview.appBuilder(context, child!),
-            );
-          },
           theme: ThemeData(fontFamily: 'Tajawal'),
           home: SplashScreen(),
         );

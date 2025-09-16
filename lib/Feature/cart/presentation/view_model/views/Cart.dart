@@ -2,14 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:oemdoc/Feature/cart/presentation/view_model/views/widgets/buildSummaryRow.dart';
 import '../../../../../../Core/utiles/Colors.dart';
 import '../../../../../../generated/l10n.dart';
+import '../../../../../Core/Widgets/AppBar.dart';
+import '../../../../Product/presentation/view_model/views/SuggerstedForYou.dart';
 import '../CardData.dart';
 import 'BuyOrder.dart';
 
 class Cart extends StatefulWidget {
-  final VoidCallback? onNavigateToSearch;
-
-  const Cart({super.key, this.onNavigateToSearch});
-
   @override
   _CartState createState() => _CartState();
 }
@@ -44,24 +42,11 @@ class _CartState extends State<Cart> {
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
     final screenHeight = MediaQuery.of(context).size.height;
-
     if (cartItems.isEmpty) {
       return Scaffold(
         resizeToAvoidBottomInset: false,
         backgroundColor: SecoundColor,
-        appBar: AppBar(
-          backgroundColor: Colors.white,
-          elevation: 0,
-          centerTitle: true,
-          title: Text(
-            S.of(context).cart,
-            style: TextStyle(
-              fontSize: screenWidth * 0.035,
-              fontWeight: FontWeight.bold,
-              color: KprimaryText,
-            ),
-          ),
-        ),
+        appBar: CustomAppBar(title: S.of(context).cart),
         body: Center(
           child: Padding(
             padding: EdgeInsets.all(screenWidth * 0.04),
@@ -98,8 +83,12 @@ class _CartState extends State<Cart> {
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {
-                      widget.onNavigateToSearch?.call();
-                    },
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Products(),
+                        ),
+                      );                    },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: KprimaryColor,
                       shape: RoundedRectangleBorder(
@@ -355,8 +344,12 @@ class _CartState extends State<Cart> {
                       width: double.infinity,
                       child: OutlinedButton(
                         onPressed: () {
-                          widget.onNavigateToSearch?.call();
-                        },
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => Products(),
+                            ),
+                          );                        },
                         style: OutlinedButton.styleFrom(
                           padding: EdgeInsets.symmetric(
                               vertical: screenWidth * 0.035),
